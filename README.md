@@ -1,7 +1,7 @@
-run_analysis
+Read Me
 ============
 
-## Coursera Getting and Cleaning Data Course Project
+## Getting and Cleaning Data Course Project
 
 This is a repository for the course project for the Coursera Getting and Cleaning Data class as part of the Data Science Specalization.  Within this reporsitiry, I have saved my script, run_analysis.R, and my code book, CodeBook.m.  
 
