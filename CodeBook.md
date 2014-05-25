@@ -3,8 +3,7 @@
 
 "The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. " [1]
 
-## Information about the Attributes
-For each record in the dataset it is provided: 
+## Information about the Attributes:
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
 * Triaxial Angular velocity from the gyroscope. 
 * A 561-feature vector with time and frequency domain variables. 
@@ -29,6 +28,12 @@ For each record in the dataset it is provided:
 * 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
+## The Data Transformations:
+The R-script, run_analysis.R, first loads and merges the training and the test sets to create a single data frame. After that, the script extracts only the measurements on the mean and standard deviation for each measurement, which are the variables with labels: mean(): or std(): contained within them.
+
+Next, the script adds the descriptive activity names column to the data set and labels the names according to 'activity_labels.txt'. The subject column is added to the data and using the aggerate function, the average of each variable for each activity and each subject is found. Finally, the R-script writes the new, tidy dataframe to a text file named Tidy.txt. 
+
+I hope you have enjoyed my code book!!
 
 
 ## Work Cited 
