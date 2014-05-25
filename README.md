@@ -8,7 +8,7 @@ This is a repository for the course project for the Coursera Getting and Cleanin
 The purpose of the R-script is to load in data collected from the accelerometers from the Samsung Galaxy S smartphone, combind the data and create a new tidy data set that can later be used to run additional analysis.  Information about the data can be found in my CodeBook.m
 
 
-## Human Activity Recognition Using Smartphones Dataset
+## Human Activity Using Smartphones Dataset
 Download the data from the below link and save it into a working directory.
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
